@@ -19,7 +19,7 @@ public class Change {
 
   @Override
   public String toString(){
-    return "[Pièce de 2€ ="+piece2+"; Billets de 5€ ="+billet5+"; Billets de 10€ ="+billet10+"]";
+    return "\nPièce de 2€ ="+piece2+"\nBillets de 5€ ="+billet5+";\nBillets de 10€ ="+billet10+"";
   }
   public static Change optimalChange(BigInteger s){
     if(s.longValue() < 3) {
@@ -49,7 +49,8 @@ public class Change {
     if(reste % Monnaie.Deux.getValeur() == 0)
       change.piece2 = reste / Monnaie.Deux.getValeur() ;
 
-    System.out.println(change.toString() + " => Somme de départ: "+ s);
+    System.out.println("Somme de départ: "+ s+
+      change.toString());
     return change;
   }
 
