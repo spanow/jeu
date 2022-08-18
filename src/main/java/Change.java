@@ -15,6 +15,9 @@ public class Change {
   private long billet5 = 0;
   private long billet10 = 0;
 
+  private long somme(){
+    return Monnaie.Deux.getValeur()*piece2 + Monnaie.Cinque.getValeur()*billet5 + Monnaie.Dix.getValeur()*billet10;
+  }
 
   @Override
   public String toString(){
@@ -52,9 +55,7 @@ public class Change {
     return change;
   }
 
-  private long sum(){
-    return Monnaie.Deux.getValeur()*piece2 + Monnaie.Cinque.getValeur()*billet5 + Monnaie.Dix.getValeur()*billet10;
-  }
+
 
 
 }
