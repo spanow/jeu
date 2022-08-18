@@ -5,5 +5,6 @@ public class Main {
     System.out.println("Bienvenue sur le jeu merveilleux du CHANGE !");
     BigInteger test = new BigInteger("7");
     Change change = Change.optimalChange(test);
+    //L'algo demande de retourner un objet de type change....
   }
 }
