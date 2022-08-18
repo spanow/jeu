@@ -51,6 +51,7 @@ public class Change {
 
     System.out.println("Somme de départ: "+ s+
       change);
+
     return change;
   }
 
